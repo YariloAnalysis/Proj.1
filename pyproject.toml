@@ -1,0 +1,21 @@
+[project]
+name = "proj-1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "YariloAnalysis", email = "yarilo.urzhumov@mail.ru" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "aiomysql>=0.3.2",
+    "asyncpg>=0.31.0",
+    "sqlalchemy>=2.0.52",
+]
+
+[project.scripts]
+proj-1 = "proj_1:main"
+
+[build-system]
+requires = ["uv_build>=0.12.4,<0.13.0"]
+build-backend = "uv_build"
